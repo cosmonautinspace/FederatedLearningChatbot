@@ -12,7 +12,7 @@ idx2char = np.array(vocab)
 #tokenizer = AutoTokenizer.from_pretrained("microsoft/DialoGPT-medium")
 #model = AutoModelForCausalLM.from_pretrained("microsoft/DialoGPT-medium")
 
-model = tf.keras.models.load_model("/content/drive/MyDrive/MajorProject/shake.h5", compile=False)
+model = tf.keras.models.load_model("shake.h5", compile=False)
 
 def generate_text(model, start_string):
   # From https://www.tensorflow.org/tutorials/sequences/text_generation
