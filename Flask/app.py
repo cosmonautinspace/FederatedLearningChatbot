@@ -46,7 +46,7 @@ def index():
 def chat():
     msg = request.form["msg"]
     input = msg
-    return generate_text(input)
+    return generate_text(model,input)
 
 
 
